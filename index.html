@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto</title>
+    <title>Venda seu carro</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        <header class="cabecalho"><h3>Cadastre seu veículo para vender mais rapido</h3>
+        <header class="cabecalho">
+            <h3>Cadastre seu veículo para vender mais rapido</h3>
         </header>
         <div class="form-container">
-            <p>Formulário</p>
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
         </div>
         <div class="form-body">
             <h1 class="form-titulo">Venda fácil seu carro</h1>
-            <p></p>
+        </div>
+        <div class="caixaInputs">
+            <label for="title">Título do anúncio <span class="campo-obrigatorio">*</span></label>
+            <input type="text" name="title" id="title" class="block" placeholder="Digite um título" minlength="1" maxlength="30" required>
+        </div>
+        <div class="caixaInputs">
+            <label for="preco">Preço <span class="campo-obrigatorio">*</span></label>
+            <input type="number" name="preco" id="preco" class="block" placeholder="Digite o preço" required>
+        </div>
+        <div class="caixaInputs">
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" class="block" placeholder="Adicione uma descrição do seu veículo" cols="30" rows="10"></textarea>
         </div>
     </div>
-
     
 <script src="script/script.js"></script>
 </body>
