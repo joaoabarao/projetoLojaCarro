@@ -46,7 +46,6 @@ textarea {
     margin: 0 auto;
     position: relative;
     top: -46px;
-    text-align: center;
 }
 .form-header {
     border-bottom: 1px solid #dfdfdf;
@@ -61,4 +60,24 @@ textarea {
     text-transform: uppercase;
     height: 45px;
     line-height: 45px;
+}
+
+.form-body {
+    padding: 30px;
+}
+
+.form-titulo {
+    margin-bottom: 15px;
+}
+
+.campo-obrigatorio {
+    color: red;
+}
+
+.caixaInputs {
+    margin-bottom: 35px ;
+}
+
+.block {
+    display: block;
 }
