@@ -71,7 +71,7 @@ textarea {
 }
 
 .campo-obrigatorio {
-    color: red;
+    color: rgb(205, 32, 32);
 }
 
 .caixaInputs {
@@ -87,7 +87,7 @@ textarea {
     margin: 0 30px 0 30px;
 }
 
-.listasOpcional li{
+.listaOpcional li{
     list-style: none;
     margin-bottom: 5px;
 }
@@ -106,8 +106,4 @@ textarea {
     background-color: #fff;
     color: #673ab7;
     border-color: #673ab7;
-}
-
-.caixaInputs {
-    margin-top: 20px;
 }
