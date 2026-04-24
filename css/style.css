@@ -8,11 +8,17 @@ body {
     background-color: #f0ebf8;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #333;
 }
 
-p, label {
+p,
+label {
     color: #444;
 }
 
@@ -22,7 +28,11 @@ input {
     padding: 10px 0;
 }
 
-input[type="text"], input[type="number"], input[type="date"], input[type="file"], textarea {
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea {
     width: 400px;
 }
 
@@ -35,6 +45,7 @@ textarea {
     padding: 20px;
     background-color: #673ab7;
 }
+
 .cabecalho h3 {
     color: #fff;
     margin-top: 0;
@@ -47,10 +58,12 @@ textarea {
     position: relative;
     top: -46px;
 }
+
 .form-header {
     border-bottom: 1px solid #dfdfdf;
     height: 45px;
 }
+
 .form-header p {
     color: #673ab7;
     border-bottom: 2px solid #673ab7;
@@ -60,6 +73,13 @@ textarea {
     text-transform: uppercase;
     height: 45px;
     line-height: 45px;
+}
+
+.form-titulo {
+    color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-body {
@@ -75,7 +95,7 @@ textarea {
 }
 
 .caixaInputs {
-    margin-bottom: 35px ;
+    margin-bottom: 35px;
 }
 
 .block {
@@ -87,7 +107,7 @@ textarea {
     margin: 0 30px 0 30px;
 }
 
-.listaOpcional li{
+.listaOpcional li {
     list-style: none;
     margin-bottom: 5px;
 }
@@ -102,6 +122,7 @@ textarea {
     text-transform: uppercase;
     transition: 0.5s;
 }
+
 .btn-submit:hover {
     background-color: #fff;
     color: #673ab7;
