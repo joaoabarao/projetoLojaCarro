@@ -86,6 +86,10 @@ textarea {
     padding: 30px;
 }
 
+.form-body p {
+    margin: 20px;
+}
+
 .form-titulo {
     margin-bottom: 15px;
 }
