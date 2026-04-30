@@ -1,41 +1,44 @@
 function salvarCarros(event) {
-    // Impedir  de recarregar a página
-    event.preventDefault();
+  // Impedir  de recarregar a página
+  event.preventDefault();
 
-    let titulo = document.getElementById("title").value;
-    let preco = document.getElementById("preco").value;
-    let marca = document.getElementById("marca").value;
-    let modelo = document.getElementById("modelo").value;
+  let titulo = document.getElementById("title").value;
+  let preco = document.getElementById("preco").value;
+  let marca = document.getElementById("marca").value;
+  let modelo = document.getElementById("modelo").value;
 
-    let cambioSelecionado = document.querySelector("input[name='marcha']:checked");
+  let cambioSelecionado = document.querySelector(
+    "input[name='marcha']:checked"
+  );
 
-    let cambio = cambioSelecionado ? cambioSelecionado.id : "Não informado";
+  let cambio = cambioSelecionado ? cambioSelecionado.id : "Não informado";
 
-    let lista = document.getElementById("listarCarros");
+  let lista = document.getElementById("listarCarros");
 
-    let carro = {
-        titulo,
-        preco,
-        marca,
-        modelo,
-        cambio
-    };
+  let carro = {
+    titulo,
+    preco,
+    marca,
+    modelo,
+    cambio,
+  };
 
-    let carros = JSON.parse(localStorage.getItem("carros")) || [];
-    carros.push(carro);
-    localStorage.setItem("carros", JSON.stringify(carros));
+  let carros = JSON.parse(localStorage.getItem("carros")) || [];
+  carros.push(carro);
+  localStorage.setItem("carros", JSON.stringify(carros));
 
-    adicionarNaTela(carro);
+  adicionarNaTela(carro);
 
-    document.querySelector("form").reset();
+  document.querySelector("form").reset();
 }
 
 function adicionarNaTela(carro) {
-    let lista = document.getElementById("listarCarros");
-    let cartao = document.createElement("div");
-    cartao.classList.add("cartao");
+  let lista = document.getElementById("listarCarros");
+  let cartao = document.createElement("div");
+  cartao.classList.add("cartao");
 
-    cartao.innerHTML = `
+  cartao.innerHTML = `
+    <img src ='https://picsum.photos/250/150?grayscale&random=${Math.random()}"'>
     <h3>${carro.titulo}</h3>
     <p><strong>Preço:</strong> R$ ${carro.preco}</p>
     <p><strong>Marca:</strong>${carro.marca}</p>
@@ -43,13 +46,13 @@ function adicionarNaTela(carro) {
     <p><strong>Câmbio:</strong>${carro.cambio}</p>
     `;
 
-    lista.appendChild(cartao);
+  lista.appendChild(cartao);
 }
 
 window.onload = function () {
-    let carros = JSON.parse(localStorage.getItem("carros")) || [];
+  let carros = JSON.parse(localStorage.getItem("carros")) || [];
 
-    carros.forEach(carro => {
-        adicionarNaTela(carro);
-    })
-}
+  carros.forEach((carro) => {
+    adicionarNaTela(carro);
+  });
+};
