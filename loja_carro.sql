@@ -15,7 +15,7 @@ cambio varchar(20)
 insert into carros (
 titulo, preco, descricao, marca, modelo, kilometragem, data_compra, cambio
 ) values (
-'Vendo celta', 12000.00, 'Carro com pouco tempo de uso', 'Chevrolet', 'Celta', 50000, 2013-12-12, 'Manual'
+'Vendo celta', 12000.00, 'Carro com pouco tempo de uso', 'Chevrolet', 'Celta', 50000, '2013-12-12', 'Manual'
 );
 
 select * from carros;
